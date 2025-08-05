@@ -4,29 +4,31 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>jsonform2</title>
- <link rel="stylesheet" type="text/css" href="lib/bootstrap.css" />
-   
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/fontawesome.min.css">
-
     </head>
   <body>
 
 <h1>Getting started with JSON Form</h1>
-<div class="container">
+<div id="test-container" class="container">
     <div class="row">
-        <button type="button" class="btn btn-primary" id="openmkmodal">
+        <button type="button" class="btn btn-primary" id="test-openmodal">
             Launch mk modal
-        </button>
+        </button>        
     </div>
+    <pre id="test-initial-product-config">
+     
+    </pre>
+    <div id="test-returnedtext">prova</div>
+    <pre id="test-returnedjson">prova</pre>
 </div>
 
     <!-- TODO: Here goes your content! -->
 
 
 
-    <script type="text/javascript" src="lib/jquery.js"></script>
+  <script type="text/javascript" src="lib/jquery.js"></script>
 	<script type="text/javascript" src="lib/underscore.js"></script>
 	<script type="text/javascript" src="lib/jsv.js"></script>
 	<script type="text/javascript" src="lib/math.js"></script>
@@ -34,5 +36,6 @@
 	<script type="text/javascript" src="lib/jsonform.js"></script>
 	<script type="text/javascript" src="lib/bootstrap.js"></script>
 	<script type="text/javascript" src="lib/bootstrap-dialog.min.js"></script>
+  <script type="text/javascript" src="lab/data-test-initial-product-config.js"></script>
  </body>
 </html>
