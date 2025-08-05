@@ -17,16 +17,32 @@
             Launch mk modal
         </button>        
     </div>
-    <pre id="test-initial-product-config">
-     
-    </pre>
+    <pre id="test-initial-product-config"></pre>
     <div id="test-returnedtext">prova</div>
     <pre id="test-returnedjson">prova</pre>
 </div>
 
     <!-- TODO: Here goes your content! -->
 
-
+<script id="mkdialog" type="text/placeholder">
+    <form role="form" id="mkform">
+        <div class="form-group">
+            <div class="row">
+            <label class="col-sm-4" for="total-price-testo">Totale</label>
+            <div class="col-sm-8">ciao</div>
+            </div>
+            <div class="controls">
+                <div class=" input-group">
+                    <input type="text" class="form-control" value="Totale" id="total-price-testo" disabled=""/>
+                    <span class="input-group-addon"><span class="mk-udm">€</span>
+                        <input disabled="" type="text" id="total-price-view" class="mk-priceview">
+                        <input type="hidden" id="total-price" class="" value="0">
+                    </span>
+                </div>
+            </div>
+        </div>
+    </form>
+</script>
 
   <script type="text/javascript" src="lib/jquery.js"></script>
 	<script type="text/javascript" src="lib/underscore.js"></script>
@@ -37,5 +53,7 @@
 	<script type="text/javascript" src="lib/bootstrap.js"></script>
 	<script type="text/javascript" src="lib/bootstrap-dialog.min.js"></script>
   <script type="text/javascript" src="lab/data-test-initial-product-config.js"></script>
+  <script type="text/javascript" src="src/functions.js"></script>
+  <script type="text/javascript" src="src/app.js"></script>
  </body>
 </html>
