@@ -5,46 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>jsonform2</title>
+    <link rel="stylesheet" type="text/css" href="src/gkcss.css" />
+    <!-- <link rel="stylesheet" href="https://plumeui.netlify.app/Styles/main.css"/>-->
+    <!--
     <link rel="stylesheet" type="text/css" href="lib/bootstrap.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/fontawesome.min.css">
+  -->
     </head>
-  <body>
+  <body class="gkcss">
 
 <h1>Getting started with JSON Form</h1>
-<div id="test-container" class="container">
-    <div class="row">
-        <button type="button" class="btn btn-primary" id="test-openmodal">
-            Launch mk modal
-        </button>        
-    </div>
-    <pre id="test-initial-product-config"></pre>
-    <div id="test-returnedtext">prova</div>
-    <pre id="test-returnedjson">prova</pre>
+
+<button id="open-modal">Modal Btn</button>
+<div class="modal-container">
+	<div class="modal">
+		<h2>Modal Heading</h2>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+          incidunt suscipit pariatur quia rem, modi harum distinctio dolores 
+          delectus magni dolorum neque nostrum nobis.</p>
+          <input type="text"/>
+		<button id="close-modal" >Close</button>
+	</div>
 </div>
 
-    <!-- TODO: Here goes your content! -->
-
-<script id="mkdialog" type="text/placeholder">
-    <form role="form" id="mkform">
-        <div class="form-group">
-            <div class="row">
-            <label class="col-sm-4" for="total-price-testo">Totale</label>
-            <div class="col-sm-8">ciao</div>
-            </div>
-            <div class="controls">
-                <div class=" input-group">
-                    <input type="text" class="form-control" value="Totale" id="total-price-testo" disabled=""/>
-                    <span class="input-group-addon"><span class="mk-udm">€</span>
-                        <input disabled="" type="text" id="total-price-view" class="mk-priceview">
-                        <input type="hidden" id="total-price" class="" value="0">
-                    </span>
-                </div>
-            </div>
-        </div>
-    </form>
-</script>
-
-  <script type="text/javascript" src="lib/jquery.js"></script>
+    <script type="text/javascript" src="lib/jquery.js"></script>
 	<script type="text/javascript" src="lib/underscore.js"></script>
 	<script type="text/javascript" src="lib/jsv.js"></script>
 	<script type="text/javascript" src="lib/math.js"></script>
