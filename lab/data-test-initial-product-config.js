@@ -5,7 +5,6 @@
         "height": true,
         "depth": false, //to-do depth
         "default": {
-          "title": "Write something",
           "width": 0 ,
           "height": 0,
           "depth": 0,
@@ -31,7 +30,7 @@
             }
           ],
         },
-        "updated": false, // true | false
+        "updated": true, // true | false
         "current": {
           "width": 1000,
           "height": 1550,

@@ -1,0 +1,17 @@
+.container {
+        width:100%
+      }
+     .inner {
+        margin: 0 auto;
+        width: 80%;
+      }
+      textarea {
+        width: 95%;
+        max-width: 95%;
+      }
+      .pure-g div{
+        box-sizing: border-box;
+        border: 1px solid grey;
+        padding: 0.5em;
+        
+      }
