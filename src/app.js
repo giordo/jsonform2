@@ -1,4 +1,4 @@
-docum{}ent.getElementById("btn").onclick = function (ev) {  
+document.getElementById("btn").onclick = function (ev) {  
   ev.preventDefault();
   const newID = generateGUID() + "-";
   
