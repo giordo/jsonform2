@@ -140,3 +140,4 @@ function updateFactorFields(event){
     parent.appendChild(labl);
     parent.appendChild(field);
   }
+}
