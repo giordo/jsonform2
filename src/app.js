@@ -90,7 +90,8 @@ document.getElementById("btn").onclick = function (ev) {
 function updateFactorFields(event){
   
    var uid = document.getElementById('giordo-euitlombs').value;
-   var w = document.getElementById(uid + 'factor-width');
+ alert(uid);
+  var w = document.getElementById(uid + 'factor-width');
    var h = document.getElementById(uid + 'factor-height');
    //var d = document.getElementById(uid + 'factor-depth');
    var s = document.getElementById(uid + 'factor-square');
