@@ -107,7 +107,7 @@ function updateFactorFields(event){
     var field = document.createElement("input");
     field.id = prefix(id);
     field.setAttribute("type", "number"); //to-do hidden field
-    //field.setAttribute("disabled", "disabled");   
+    field.setAttribute("disabled", "disabled");   
     field.dataset.factortype = id; 
     field.value = value;
     var parent = document.getElementById(appendTo);
