@@ -90,13 +90,13 @@ document.getElementById("btn").onclick = function (ev) {
 function updateFactorFields(event){
   
    var uid = document.getElementById('giordo-euitlombs').value;
- alert(uid);
+
   var w = document.getElementById(uid + 'factor-width');
    var h = document.getElementById(uid + 'factor-height');
    //var d = document.getElementById(uid + 'factor-depth');
    var s = document.getElementById(uid + 'factor-square');
    var c = document.getElementById(uid + 'factor-cube');  
-
+alert(c.value)
    console.log((parseInt(h.value) + parseInt(w.value)) + ' ' + h.value);
 
    s.value = (parseInt(w.value) * parseInt(h.value)) /1000000;
