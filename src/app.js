@@ -24,7 +24,8 @@ document.getElementById("btn").onclick = function (ev) {
       document.body.appendChild(hiddenID);
     }
 else{
-return true;
+alert("676");
+return;
 }
     
     var fieldbit = 0;
