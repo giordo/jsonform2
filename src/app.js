@@ -4,6 +4,8 @@ document.getElementById("btn").onclick = function (ev) {
   
   //to-do prevent multiple click on openButton
 
+if(document.getElementById("
+
 
   jsonConfig = initial_config;
   //document.getElementById("code").innerHTML = JSON.stringify( jsonConfig, null, 2);
@@ -23,6 +25,9 @@ document.getElementById("btn").onclick = function (ev) {
       hiddenID.value = current.uid;
       document.body.appendChild(hiddenID);
     }
+else{
+return true;
+}
     
     var fieldbit = 0;
 
