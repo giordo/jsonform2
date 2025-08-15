@@ -91,15 +91,19 @@ function updateFactorFields(event){
   
    var uid = document.getElementById('giordo-euitlombs').value;
 
+var width = document.getElementById(uid + 'width');
+var height = document.getElementById(uid + 'height');
+
   var w = document.getElementById(uid + 'factor-width');
    var h = document.getElementById(uid + 'factor-height');
-   //var d = document.getElementById(uid + 'factor-depth');
+ var d = document.getElementById(uid + 'factor-depth');
    var s = document.getElementById(uid + 'factor-square');
    var c = document.getElementById(uid + 'factor-cube');  
    console.log((parseInt(h.value) + parseInt(w.value)) + ' ' + h.value);
-alert(w.value);
-   s.value = 37; //(parseInt(w.value) * parseInt(h.value)) /1000000;
-   //c.value = w.value * h.value * d.value /1000000000;  
+
+s.value = width.value * height.value/1000000;  
+}
+c.value = width.value * height.value * depth.value/1000000000;  
 }
 
   function buildFieldToStoreFactorValue(id, appendTo, value) {
