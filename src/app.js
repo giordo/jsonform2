@@ -97,7 +97,7 @@ function updateFactorFields(event){
    var s = document.getElementById(uid + 'factor-square');
    var c = document.getElementById(uid + 'factor-cube');  
    console.log((parseInt(h.value) + parseInt(w.value)) + ' ' + h.value);
-alert(w);
+alert(w.value);
    s.value = 37; //(parseInt(w.value) * parseInt(h.value)) /1000000;
    //c.value = w.value * h.value * d.value /1000000000;  
 }
