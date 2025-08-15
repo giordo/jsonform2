@@ -103,7 +103,7 @@ var depth = document.getElementById(uid + 'depth');
    console.log((parseInt(h.value) + parseInt(w.value)) + ' ' + h.value);
 
 s.value = width.value * height.value/1000000;  
-}
+
 c.value = width.value * height.value * depth.value/1000000000;  
 }
 
