@@ -93,6 +93,7 @@ function updateFactorFields(event){
 
 var width = document.getElementById(uid + 'width');
 var height = document.getElementById(uid + 'height');
+var depth = document.getElementById(uid + 'depth');
 
   var w = document.getElementById(uid + 'factor-width');
    var h = document.getElementById(uid + 'factor-height');
