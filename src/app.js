@@ -2,9 +2,7 @@ document.getElementById("btn").onclick = function (ev) {
   ev.preventDefault();
   const newID = generateGUID() + "-";
   
-  //to-do prevent multiple click on openButton
-
-if(document.getElementById("
+  //to-do prevent multiple click on open button
 
 
   jsonConfig = initial_config;
