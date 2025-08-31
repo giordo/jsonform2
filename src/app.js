@@ -89,7 +89,7 @@ return;
     var d = (fieldbit >= 4)? true : false;
     sel.appendChild(buildOptionOnSelectFactor("depth", t("Depth"), d));
     
-    var c = (fieldbit >= 5)? ture: false;
+    var c = (fieldbit >= 5)? true: false;
     sel.appendChild(buildOptionOnSelectFactor("cube", t("Cube"), c));
 
   } // end jsonConfig.configurable === true
