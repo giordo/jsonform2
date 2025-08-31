@@ -73,7 +73,12 @@ return;
     buildFieldToStoreFactorValue(current.uid + "factor-cube", "code", parseInt(current.width) * parseInt(current.height) * parseInt(current.depth) / 1000000000);
     */
     
-    /* build option field to use in components factor select */
+    
+
+  } // end jsonConfig.configurable === true
+
+function buildSelectFactor(filebit){
+  /* build option field to use in components factor select */
     var sel = document.createElement("select");
     sel.appendChild(buildOptionOnSelectFactor("unit", t("Unit")));
     
@@ -92,13 +97,12 @@ return;
     var c = (fieldbit >= 5)? true: false;
     sel.appendChild(buildOptionOnSelectFactor("cube", t("Cube"), c));
 
-  } // end jsonConfig.configurable === true
-
-
+  return sel;
+}
 
 function updateFactorFields(event){
   
-   var uid = document.getElementById('giordo-euitlombs').value;
+  var uid = document.getElementById('giordo-euitlombs').value;
 
   var width = document.getElementById(uid + 'width');
   var height = document.getElementById(uid + 'height');
@@ -139,11 +143,11 @@ c.value = width.value * height.value * depth.value/1000000000;
     return opt;
   }
 
-  function buildDimensionField(id, label, value, appendTo) {
+  function buildDimensionField(id, title, value, appendTo) {
     // changedimension
-    var labl = document.createElement("label");
-    labl.setAttribute("for", prefix(id));
-    labl.innerHTML = label;
+    var label = document.createElement("label");
+    label.setAttribute("for", prefix(id));
+    label.innerHTML = title;
 
     var field = document.createElement("input");
     field.id = prefix(id);
@@ -156,7 +160,7 @@ c.value = width.value * height.value * depth.value/1000000000;
     });
 
     var parent = document.getElementById(appendTo);
-    parent.appendChild(labl);
+    parent.appendChild(label);
     parent.appendChild(field);
   }
 };
