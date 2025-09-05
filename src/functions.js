@@ -1,7 +1,6 @@
 
-function prefix(t){ //to-do
-    var prefix = '';
-    return prefix + t;
+function p(t){ //to-do
+    return appPrefix + t;
 }
 
 function t(word_to_translate){ //to-do
@@ -18,3 +17,26 @@ function generateGUID() {
          s4() + '-' + s4() + s4() + s4();
 }
 console.log(generateGUID());
+
+function createElement(name, classes, parent) {
+  let element = document.createElement(name);
+
+  element.className += classes;
+
+  if (parent) {
+    parent.appendChild(element);
+  }
+
+  return element;
+}
+
+function createInputElement(name, classes, parent, label) {
+  let id = generateGUID;
+  let lbl = createElement('label', classes, parent);
+  lbl.setAttribute('for', id);
+  lbl.innerHTML = label;
+  let element = createElement(name, classes, parent);
+  element.setAttribute('id', id);
+  element.setAttribute('name', id);
+  return element;
+}
